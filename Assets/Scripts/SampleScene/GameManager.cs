@@ -9,17 +9,6 @@ namespace SampleScene {
         public Sprite Sprite;
 
         private void Awake() {
-            var strs = new StringBuilder();
-            strs.AppendLine("[Sprite Info]");
-            strs.AppendLine("# vertices -----------------");
-            foreach (var vert in Sprite.vertices) {
-                strs.AppendLine(vert.ToString());
-            }
-            strs.AppendLine("# uvs -----------------");
-            foreach (var uv in Sprite.uv) {
-                strs.AppendLine(uv.ToString());
-            }
-            Debug.Log(strs);
         }
 
         private void Update() {
